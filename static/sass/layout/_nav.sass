@@ -1,0 +1,669 @@
+/* ALL NAVIGATION STYLES */
+  
+  
+// MAIN NAVIGATION BAR 
+.overlay
+  opacity: 1
+  //background-color: $color-primary-dark !important
+
+
+
+
+nav.main-nav
+  background-color: $color-primary 
+  width: 100% // size of entire nav bar spanning page 
+  position: absolute 
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+  padding: 0 0
+  z-index: 8
+  min-height: 31px
+
+  > ul.nav-list 
+    list-style: none
+    display: flex 
+    flex-direction: row 
+    justify-content: space-between
+    margin: 0 auto
+    width: 70% // size of inner nav list
+    margin-bottom: 0
+
+    > li.nav-item
+      position: relative
+      display: inline-block
+      list-style: none
+      padding: 0 0.5rem
+      cursor: pointer
+      float: left
+      line-height: 65px
+      position: relative
+      text-transform: uppercase
+      font-size: 1rem
+      z-index: 2
+      letter-spacing: 1.5px
+
+      a.nav-link
+        white-space: nowrap
+        text-decoration: none 
+        color: #ffffff
+        padding: 0 0
+        z-index: 2
+        &:focus
+          outline: 1px dotted #ffffff
+
+        &:hover
+          color: #5D6B29
+
+      // Need adjusting after assets are received
+      &:hover > span
+        display: block
+        background-image: url('/static/img/image/navbar-tab.png')
+        background-size: 100% 100%
+        background-position: center top
+        background-repeat: no-repeat
+        z-index: -1
+        position: absolute
+        top: 0px
+        left: 50%
+        display: block
+        height: 110%
+        width: 300%
+        transform: translateX(-50%) 
+        pointer-events: none
+
+      // Drop-downs      
+
+      ul.drop-menu
+        position: absolute
+        top: 100%
+        right: 50%
+        width: 100%
+        padding: 0
+        
+        li
+          position: relative
+          background-color: $color-primary
+          color: rgba(255,255,255,0.7)
+          transition: all 200ms ease-in-out
+          width: 200% // size of dropdown bg
+
+          &:last-child
+            height: 80px
+        
+          a
+            position: relative
+            cursor: pointer
+            transition: all 200ms ease-in-out
+
+            &:hover
+              font-size: 1.05rem
+              color: $color-yellow
+
+            &:hover::after
+              content: ""
+              position: absolute
+              height: 2px
+              bottom: 15%
+              width: 65%
+              left: 50%
+              transform: translateX(-50%)
+              background-color: rgba(255,255,255,0.7)
+              
+
+          &:last-child
+            border-radius: 0px 0px 5px 5px
+
+
+// ENGLISH SITE MAIN NAV
+nav.en-main-nav
+  background-color: $color-primary 
+  width: 100% // size of entire nav bar spanning page 
+  position: absolute 
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+  padding: 0 0
+  z-index: 8
+  min-height: 3cvb1px
+
+  > ul.nav-list 
+    list-style: none
+    display: flex 
+    flex-direction: row 
+    justify-content: space-between
+    margin: 0 auto
+    width: 70% // size of inner nav list
+    margin-bottom: 0
+
+    > li.nav-item
+      position: relative
+      display: inline-block
+      list-style: none
+      padding: 0 0.5rem
+      cursor: pointer
+      float: left
+      line-height: 65px
+      position: relative
+      font-size: 0.9rem
+      z-index: 2
+      text-transform: none
+      letter-spacing: 0
+      
+      &:first-child
+        padding: 0 35px
+
+      a.nav-link
+        white-space: nowrap
+        text-decoration: none 
+        color: #ffffff
+        padding: 0 0
+        z-index: 2
+
+      // Need adjusting after assets are received
+      &:hover > span
+        display: block
+        background-image: url('/static/img/image/navbar-tab.png')
+        background-size: 100% 100%
+        background-position: center top
+        background-repeat: no-repeat
+        z-index: -1
+        position: absolute
+        top: 0px
+        left: 50%
+        display: block
+        height: 110%
+        width: 160%
+        transform: translateX(-50%) 
+        pointer-events: none
+
+
+      // Drop-downs      
+
+      ul.drop-menu
+        position: absolute
+        top: 100%
+        right: 35%
+        width: 100%
+        padding: 0
+
+        li
+          position: relative
+          background-color: $color-primary
+          color: rgba(255,255,255,0.7)
+          transition: all 200ms ease-in-out
+          width: 170% // size of dropdown bg
+          
+
+          &:last-child
+            height: 80px
+        
+          a
+            position: relative
+            cursor: pointer
+            transition: all 200ms ease-in-out
+
+            &:hover
+              font-size: 1.01rem
+              color: $color-yellow
+
+            &:hover::after
+              content: ""
+              position: absolute
+              height: 2px
+              bottom: 15%
+              width: 65%
+              left: 50%
+              transform: translateX(-50%)
+              background-color: rgba(255,255,255,0.7)
+              
+
+          &:last-child
+            border-radius: 0px 0px 5px 5px
+
+        // individual dropdown widths
+        &#news-nav
+          right: 45% !important
+
+          li
+            width: 185% !important
+
+        &#visitor-info-nav
+          right: 27.5% !important
+
+          li
+            width: 150% !important
+            
+        &#environmental-edu-nav
+          right: 50% !important
+
+          li
+            width: 195% !important
+
+        &#conservation-nav
+          right: 45% !important
+
+          li
+            width: 185% !important
+
+        &#administrative-nav
+          right: 25% !important
+
+          li
+            width: 145% !important
+
+        &#multimedia-nav
+          right: 45% !important
+
+          li
+            width: 175% !important
+            
+// Default Trigger    
+
+ul.drop-menu li
+  display: none // HIDE
+
+  &.show
+    display: block !important
+
+// selects all ul.drop-menu li, where parent is hovered li
+li:hover > ul.drop-menu li
+  display: block // SHOW
+
+
+
+
+// Dropdown Animations
+// main nav
+
+// vines dropping down
+// li:hover > ul.drop-menu
+//   li
+//     opacity: 0
+//     transform-origin: top center
+
+//     // $ placeholder, this is written six times 1 - 6
+//     @for $i from 1 through 6
+//       &:nth-child(#{$i})
+//         animation:
+//           name: dropdown-main
+//           duration: 450ms
+//           delay: (150ms * $i) - 200
+//           timing-function: ease-in-out
+//           fill-mode: forwards
+
+// build in spin
+li:hover > ul.drop-menu
+  li
+    opacity: 0
+
+    // $ placeholder, this is written six times 1 - 6
+    @for $i from 1 through 6
+      
+      &:nth-child(#{$i})
+        animation:
+          name: build-in-spin
+          duration: 600ms
+          delay: (150ms * $i) - 150
+          timing-function: ease-in-out
+          fill-mode: forwards
+
+
+// primary nav specific
+li:hover > ul.drop-menu.primary-drop
+  li
+    opacity: 0
+    transform-origin: top center
+
+    // // $ placeholder, this is written six times 1 - 6
+    // @for $i from 1 through 6
+    //   &:nth-child(#{$i})
+    //     animation:
+    //       name: dropdown-primary
+    //       duration: 450ms
+    //       delay: (150ms * $i) - 150
+    //       timing-function: ease-in-out
+    //       fill-mode: forwards
+
+
+// SUB-NAVIGATION MENU within content pages 
+.sub-nav
+  background-color: #ffffff
+  border-radius: 10px
+  box-shadow: 1px 3px 2px #CCC
+  border-left-width: 9px
+  border-left-style: solid
+  width: 95%
+
+  //-webkit-border-image: -webkit-gradient(linear, 0 100%, 0 0, from(#f29425), to(rgba(248, 184, 034, 1))) 1 100%
+  //-webkit-border-image: -webkit-linear-gradient(bottom, #f29425, rgba(248, 184, 034, 1)) 1 100%
+  //-moz-border-image: -moz-linear-gradient(bottom, #f29425, rgba(248, 184, 034, 1)) 1 100%
+  //-o-border-image: -o-linear-gradient(bottom, #f29425, rgba(248, 184, 034, 1)) 1 100%
+  //border-image: linear-gradient(to top, #f29425, rgba(248, 184, 034, 1)) 1 100%
+
+  border-left: double 10px transparent
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f8b822,#f29425)
+  background-origin: border-box
+  background-clip: content-box, border-box
+
+  .nav-link
+    color: #1F3D1E
+    width: 110%
+    padding-top: 12px
+    padding-bottom: 12px
+    font-weight: 500
+    transition: all 200ms ease-in-out
+
+    &.en-subnav
+      font-size: 0.9rem
+
+    &:hover
+      color: #e86d00
+
+    &:focus
+      outline: 1px dotted #007bff
+
+  .nav-link.active
+    color: #FFF
+    background-image: linear-gradient(to bottom right, #739230, #4C7337)
+    border-bottom-right-radius: 30px
+    font-weight: 500
+    transition: all 200ms ease-in-out   
+
+    &:hover
+      color: $color-yellow
+
+  // INNER NAVs within SUBNAVs
+  ul.inner-nav
+    opacity: 0
+    transform-origin: top
+    animation: expandNav 500ms ease-in-out forwards
+    padding-left: 25px 
+
+    &:last-child 
+      padding-bottom: 10px
+    
+
+    li.inner-item
+      position: relative
+      list-style: none
+      line-height: 45px
+
+      &.en-inner
+        line-height: 40px
+        font-size: 0.8rem
+
+        &.active::after
+          position: absolute
+          top: 33px
+          left: -5px
+          content: ''
+          height: 3px
+          background-color: $color-primary-dark
+          width: 90%
+
+      a
+        text-decoration: none
+        color: $color-primary
+        transition: all 200ms ease-in-out
+
+        &:hover
+          color: $color-yellow
+
+      &.active::after
+        position: absolute
+        top: 40px
+        left: -5px
+        content: ''
+        height: 3px
+        background-color: $color-primary-dark
+        width: 90%
+
+
+// PRIMARY NAV (shared in all pages except index)
+
+.primary-nav
+  height: 41px
+  position: relative
+  // background-color: rgba(255, 255, 255, 0.8)
+  z-index: 7
+
+
+  // > li.nav-item
+  //   display: inline-block
+  //   list-style: none
+  //   padding: 0 0.5rem
+  //   cursor: pointer
+  //   float: left
+  //   line-height: 65px
+  //   position: relative
+  //   text-transform: uppercase
+  //   font-size: 1rem
+
+  ul.nav-list 
+    text-align: right
+
+    li.nav-item
+      position: relative
+      display: inline-block
+      list-style: none
+      padding: 0
+
+      a.nav-link
+        height: 50px // to prevent hover failing between dropdown title head and dropdown list
+        cursor: pointer 
+        white-space: nowrap
+        text-decoration: none 
+        color: #000
+        padding: 0.55rem 1rem
+
+      a.nav-link.main-link:after
+        content: "|"
+
+        margin-left: 2rem
+        margin-top: -5px
+ 
+      a.nav-last.main-link:after
+        content: ""
+        margin-left: 16px
+
+      
+      // Drop-downs      
+
+      ul.drop-menu
+        position: absolute
+        top: 41px
+        left: -24px
+        width: 110%
+        padding: 0
+        
+        li
+          position: relative
+          text-align: center
+          // background-color: $color-primary
+          background-color: rgba(255,255,255,0.7)
+          transition: all 300ms ease-in-out
+          // width: 200% // size of dropdown bg
+
+          &:last-child
+            height: 50px
+        
+          a
+            position: relative
+            cursor: pointer
+            transition: all 200ms ease-in-out
+
+            &:hover
+              color: $color-primary-light
+            
+            &:focus
+              border: 1px dotted #007bff
+
+            &:hover::after
+              content: ""
+              position: absolute
+              height: 2px
+              bottom: 10%
+              width: 65%
+              left: 50%
+              transform: translateX(-50%)
+              background-color: fade-out($color-yellow, 0.8)
+              
+
+          &:last-child
+            border-radius: 0px 0px 5px 5px
+
+      ul.drop-menu.drop-en
+        position: absolute
+        top: 41px
+        left: -24px
+        width: 175%
+        padding: 0
+        
+        li
+          position: relative
+          text-align: center
+          // background-color: $color-primary
+          background-color: rgba(255,255,255,0.7)
+          transition: all 300ms ease-in-out
+          // width: 200% // size of dropdown bg
+
+          &:last-child
+            height: 50px
+        
+          a
+            position: relative
+            cursor: pointer
+            transition: all 200ms ease-in-out
+
+            &:hover
+              color: $color-primary-light
+
+            &:hover::after
+              content: ""
+              position: absolute
+              height: 2px
+              bottom: 10%
+              width: 65%
+              left: 50%
+              transform: translateX(-50%)
+              background-color: fade-out($color-yellow, 0.8)
+              
+
+          &:last-child
+            border-radius: 0px 0px 5px 5px
+      
+
+// Temporary solution to add a bg behind primary nav bar that is also behind the main
+// logo, where the primary nav bar text can be ABOVE the logo (else can't be clicked)
+.primary-nav-bg  
+  height: 41px
+  width: 100%
+  position: absolute
+  top: 55px
+  left: 0
+  background-color: rgba(255, 255, 255, 0.8)
+  z-index: 4
+
+
+.en-nav
+  height: 41px
+  position: relative
+  // background-color: rgba(255, 255, 255, 0.8)
+  z-index: 7
+
+
+  // > li.nav-item
+  //   display: inline-block
+  //   list-style: none
+  //   padding: 0 0.5rem
+  //   cursor: pointer
+  //   float: left
+  //   line-height: 65px
+  //   position: relative
+  //   text-transform: uppercase
+  //   font-size: 1rem
+
+  ul.nav-list 
+    text-align: right
+
+    li.nav-item
+      position: relative
+      display: inline-block
+      list-style: none
+      padding: 0
+      font-size: 0.8rem
+
+      &:last-child
+        margin-right: 25px
+
+      ul.drop-menu.latest-news 
+        top: 61px 
+        left: -44px
+        width: 198%
+
+      ul.drop-menu.visitor-info
+        left: -28px
+        width: 120%
+      
+      ul.drop-menu.conservation
+        left: -39px
+        width: 147%
+      
+      ul.drop-menu.education
+        left: -42px
+        width: 167%
+      
+      ul.drop-menu.applications
+        left: -34px
+        width: 145%
+      
+      ul.drop-menu.administrative
+        left: -21px
+        width: 117%
+      
+      ul.drop-menu.multimedia
+        left: -21px
+        width: 145%
+
+
+      a.nav-link
+        cursor: pointer 
+        white-space: nowrap
+        text-decoration: none 
+        color: #000
+        padding: 0.7rem 0.5rem
+        letter-spacing: 0
+
+      a.nav-link.main-link:after
+        content: "|"
+
+        margin-left: 1rem
+        margin-top: -5px
+ 
+      a.nav-last.main-link:after
+        content: ""
+        margin-left: 0.5rem
+
+#trigger-overlay
+  position: relative
+  z-index: 10
+
+
+// Mobile Menu
+
+.overlay.overlay-contentscale
+  z-index: 9999
+
+.menu-mobile.overlay ul li a
+  letter-spacing: 0
+  font-size: 0.9rem
+
+.drop-mobile
+  font-size: 0.8rem
+
+  a
+    color: #ffffff
+
+.overlay-close i
+  margin-top: -2px

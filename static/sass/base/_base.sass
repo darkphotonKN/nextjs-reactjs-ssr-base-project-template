@@ -1,0 +1,515 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900')
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700')
+
+*,
+*::after,
+*::before
+  margin: 0
+  padding: 0 
+  box-sizing: border-box
+  
+body 
+  box-sizing: border-box
+  font-family: 'Noto Sans TC'
+
+  // &.en-pages
+  //   font-family: 'Roboto Slab'
+
+// Helper Classes For Shared Styles
+
+// Margins
+
+// bootstrap mt-1 ~ mt-5, plus custom:
+.mt-lg 
+  margin-top: 60px
+
+.mt-xlg
+  margin-top: 90px
+
+.mt-xxlg 
+  margin-top: 140px
+
+.no-padding
+  padding: 0
+
+
+// Border Radius
+.br-sm
+  border-radius: 4px
+
+.br-md
+  border-radius: 10px
+
+.br-lg
+  border-radius: 30px
+
+  
+// dotted horizonal bar used to seperate certain sections
+.dotted-bar
+  height: 2px
+  border-bottom: 1px dashed $color-primary
+
+// labels - give wrapping element 'position: relative'
+// to position label correctly
+.qrcode
+  margin-bottom: -20%
+  z-index: 4
+  position: relative
+
+.label-qr
+  left: 50% !important
+  transform: translateX(-50%)
+
+
+#label-solo
+  position: absolute
+  top: -50px
+  left: 30px
+
+  &-centered
+    position: absolute
+    top: -31px
+    left: 50%
+    transform: translateX(-50%)
+
+
+    .label-wrap
+      position: relative
+
+      .small-box
+        width: 185px
+
+      .label-txt
+        position: absolute
+        color: #fff
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        display: inline-block
+        font-size: 0.9rem
+        text-align: center
+        h2
+          font-size: 1rem
+          margin: 0
+
+  .label-wrap
+    position: relative
+
+    .label-txt
+      position: absolute
+      color: #fff
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      display: inline-block
+      h2
+        font-size: 1rem
+        margin: 0
+
+      &.small-box
+        font-size: 0.9rem
+
+
+  &.small
+    top: -34px
+
+    img
+      width: 170px
+  
+
+
+
+// content title
+.modal
+  z-index: 9999
+
+h2.content-title
+  font-size: 1.4rem
+  color: $color-primary  
+  line-height: 30px
+  margin-bottom: 5px
+
+h2.content-date
+  font-size: 0.9rem
+  color: #9B9B9B
+  margin-top: 5px
+  padding-bottom: 10px
+
+
+// Entire Page Wrap 
+#page-wrap
+  overflow: hidden
+  position: relative
+  // height of footer + 50 to create space
+  background-color: $color-bg
+
+.content-banner
+  min-height: 302px
+  background-position: center center
+  margin-top: -41px
+  position: relative
+  z-index: 1
+
+.section-label h2
+  background: url('../img/image/home-label.svg') no-repeat left top 
+  width: 270px
+  text-align: center
+  margin-top: 290px
+  margin-bottom: 0
+  padding: 8.5px 
+  color: #ffffff
+  letter-spacing: 5px
+  font-size: 1.4rem
+
+  &.en-label
+    letter-spacing: 0
+    font-size: 0.9rem
+
+.en-label h2
+  letter-spacing: 0
+  font-size: 0.87rem
+
+  
+// Main content area wrap for most content pages 
+.main-content
+  padding: 40px 40px
+  background-color: $color-white
+  box-shadow: 1px 3px 3px #B1B098
+  border-radius: $br-med
+
+  &.no-padding
+    padding: 20px 0
+
+.main-full-content
+  padding: 20px 0
+  padding-bottom: 0
+  background-color: $color-white
+  box-shadow: 1px 3px 3px #B1B098
+  border-radius: $br-med
+
+h3 
+  color: #878532
+  font-size: 1.28rem
+  
+p
+  font-size: 1rem
+  line-height: 37px
+  color: #4A4A4A
+
+.text-content
+  font-size: 1rem
+  line-height: 37px
+  color: #4A4A4A
+  text-align: justify
+
+  p
+    font-size: 1rem !important
+
+  img
+    width: 100%
+
+  ul
+    li
+      font-size: 1rem
+      text-align: justify
+      width: 97%
+      line-height: 40px
+
+  ol 
+    li
+      font-size: 1rem
+      text-align: justify
+      width: 97%
+      line-height: 40px
+
+// Main Content Title Wrap
+.page-title
+  position: relative
+  margin-bottom: 50px
+
+  &.with-carousel
+    margin-bottom: 25px
+    
+  .social-bar-wrap
+    position: relative
+    top: 20px
+    left: -40px
+    height: 4px
+    background-color: $color-primary-faded
+    width: 103%
+
+    .social-bar
+      position: relative
+      z-index: 2
+
+      .social-icon
+        position: absolute
+        top: -15px
+        border-radius: 50%
+        height: 32px
+        width: 32px
+        background-color: #888754
+        display: flex
+        justify-content: center
+        align-items: center
+        a
+          display: block
+          &:focus
+            border: 1px dotted #007bff
+
+        &#print-icon
+          right: 0
+
+          img 
+            height: 15px
+            margin-top: -5px
+            margin-left: 1px
+            
+        &#email-icon
+          right: 60px
+
+          img 
+            height: 12px
+            margin-top: -5px
+            
+        &#line-icon
+          right: 120px
+          
+          img 
+            height: 15px
+            margin-top: -5px
+            
+        &#fb-icon
+          right: 180px
+
+          img 
+            height: 15px
+            margin-top: -5px
+
+.full-section 
+  margin-top: 20px
+
+  hr
+    border: none
+    border-bottom: 4px solid #888754
+
+  .container-full
+    margin: 0 30px
+
+
+.page-full-title
+  position: relative
+
+
+// Carousels
+.carousel
+  position: relative
+
+  .carousel-item
+    img
+      border-radius: 4px 4px 0 0
+
+  .carousel-label
+    position: absolute
+    bottom: 0
+    padding: 2px 25px
+    background-color: rgba(0, 0, 0, 0.5)
+    color: #fff
+    font-size: 1rem
+    width: 100%
+
+
+.social-bar-standalone-wrap
+  position: relative
+  top: 0
+  height: 4px
+  background-color: $color-primary-faded
+  width: 100%
+  z-index: 2
+
+  .social-bar
+    position: relative
+
+    .social-icon
+      position: absolute
+      border-radius: 50%
+      height: 32px
+      width: 32px
+      background-color: #888754
+      display: flex
+      justify-content: center
+      align-items: center
+
+      &#print-icon
+        top: -14px
+        right: 80px
+
+        img 
+          height: 15px
+          margin-top: -5px
+          margin-left: 1px
+          
+      &#email-icon
+        top: -14px
+        right: 140px
+
+        img 
+          height: 12px
+          margin-top: -5px
+          
+      &#line-icon
+        top: -14px
+        right: 200px
+        
+        img 
+          height: 15px
+          margin-top: -5px
+          
+      &#fb-icon
+        top: -14px
+        right: 260px
+
+        img 
+          height: 15px
+          margin-top: -5px
+
+
+.video
+  width: 100%
+  margin-bottom: -10px
+
+  .layer-top
+    width: 100%
+    position: absolute
+    z-index: 1
+    background: transparent
+    height: 400px
+
+  .layer-bottom
+    width: 100%
+    position: absolute
+    z-index: 1
+    background: transparent
+    height: 830px
+    
+  video 
+    width: 100%
+    position: relative
+    z-index: 0
+
+  &.video-top
+    margin-bottom: 50px
+
+.video-react-big-play-button
+  display: none
+
+.video-react
+  padding-top: 0 !important
+
+
+//Bootstrap Carousel
+.carousel-item
+
+  img
+    height: 350px
+    object-fit: cover
+
+
+.video-bottom
+  margin-top: -15%
+  position: relative
+  z-index: 0
+
+
+//Sitemap
+.sitemap-section
+
+  ol
+    margin-left: 20px
+    line-height: 35px
+    list-style-type: none
+
+    a
+      color: #333333
+      &:focus
+        outline: 1px dotted #007bff
+
+  ul
+    list-style: none
+    line-height: 30px
+    margin-left: 20px
+
+    a
+      color: #0c1480
+      font-size: 0.9rem
+
+  .sub
+    margin-left: 30px
+
+    a
+      color: #0e19af
+      font-size: 0.8rem
+
+
+/* Site Search */
+.react-datepicker-popper
+  z-index: 10
+
+
+.services
+  h5, h6
+    color: #5D6B29
+
+  table
+    font-size: 0.85rem
+
+    td
+      width: 40%
+
+
+input[type="radio"]
+  margin-top: 0px
+
+input[type="file"]
+  font-size: 0.8rem
+
+
+hr.normal.dotted
+  border: none !important
+  border: 0.5px dashed #CCC !important
+
+
+select#dropdown
+  background-color: $color-primary-faded
+  color: #ffffff
+  width: 50px
+  border-radius: 20px
+
+
+// posting message styles and animation
+
+.response-message
+  color: #7E5F15
+
+  &.active
+    animation: posting-message 700ms ease-in-out forwards
+
+
+  /* Site Search */
+.result-search
+  font-weight: 500
+  border-top: 1px solid #cccccc
+  line-height: 28px
+  padding-top: 20px
+  color: #555555
+
+  span
+    color: #878532
+    font-weight: 300
+
+
+.modal-style
+  max-height: 600px
+  overflow: scroll
+

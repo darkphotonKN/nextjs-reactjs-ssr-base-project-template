@@ -1,0 +1,21 @@
+{
+  "name": "shimen-dev",
+  "version": "1.0.0",
+  "description": "Shimen website.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next -p 3000",
+    "build": "NODE_ENV=production next build",
+    "start": "NODE_ENV=production node ./server.js",
+    "heroku-postbuild": "./node_modules/next/dist/bin/next build"
+  },
+  "author": "Kranti",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "next": "^8.1.0",
+    "proxy": "^0.2.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

@@ -1,0 +1,399 @@
+@import 'nav'
+
+/* HEADER */   
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+
+.icon-chinese
+  font-size: 0.65rem
+  background: #ffffff
+  border-radius: 3px
+  padding: 1.5px
+  color: $color-primary
+  font-weight: 400
+  margin-left: 5px
+  
+  &:hover
+    text-decoration: none
+    color: $color-primary
+
+// Header Bar 
+header#header-bar
+  background-color: $color-primary
+  //padding: 0.5rem 4%
+  min-height: 55px
+ 
+  .header-bar-icons
+    
+    img 
+      height: 20px
+      vertical-align: bottom
+
+    .icon-search img
+      height: 18px
+      margin-top: 3px
+
+    .icon-sitemap img 
+      height: 20px
+    
+    .icon-facebook img 
+      height: 20px
+      
+    .icon-youtube img 
+      height: 24px
+    
+    .icon-mail img 
+      height: 16px
+
+    .icon-rss img
+      color: $color-white
+      height: 16px
+
+    .icon-english img
+      height: 18px
+
+    .icon-chinese
+      font-size: 0.65rem
+      background: #ffffff
+      border-radius: 3px
+      padding: 1.5px
+      color: $color-primary
+      font-weight: 400
+      margin-left: 13px
+    
+    a
+      color: $color-white
+      margin: 1px 5px
+      text-decoration: none
+      font-family: 'Noto Sans TC'
+      &:focus
+        border: 1px dotted #ffffff
+      &.accesskey
+        opacity: 0
+        &:focus
+          opacity: 1
+
+    .text
+      border: 1.5px solid #ffffff
+      border-radius: 50%
+      padding: 1px 2px
+      padding-bottom: 1px
+      padding-left: 3px
+      font-size: 8px
+      margin-left: 5px
+      margin-right: 5px
+      font-weight: 100
+      
+
+  .site-variations 
+    color: $color-white
+    margin-top: 16px
+    margin-right: 10px
+
+    a
+      color: #ffffff
+      margin-right: 20px
+      font-weight: 400
+      font-size: 0.9rem
+      letter-spacing: 2px
+    
+      &:hover
+          text-decoration: none
+          opacity: 0.7
+          transition: 0.5s
+      
+      &:focus
+        border: 1px dotted #ffffff
+
+      &.en-variation
+        letter-spacing: 1px
+        font-size: 0.85rem
+
+    .first:after
+      content: '|'
+      margin-left: 20px
+
+    .last
+      padding-right: 20px
+      
+
+
+.background-logo 
+  background: url('../img/image/logo-block.svg') no-repeat left top
+  position: absolute
+  left: 0
+  top: 0
+  width: 500px
+  height: 250px
+  margin-left: 10px
+  z-index: 6
+  
+  img 
+    margin-top: 20px
+    margin-left: 35px
+    width: 230px
+
+.background-right 
+  background: url('../img/image/class-block.svg') no-repeat right top
+  position: absolute
+  right: 0
+  top: 0
+  width: 400px
+  height: 75px // if buggy set to 200px
+  z-index: 3
+  text-align: right
+
+  &-secondary
+    display: none
+    background: url('../img/image/class-block.svg') no-repeat right top
+    position: absolute
+    right: 0
+    top: 0
+    width: 500px
+    height: 200px
+    z-index: 3
+    text-align: right
+    
+
+// Header Banner Area 
+#header-banner
+  display: block
+  // background-image: url('../img/banner/home_banner.png')
+  // background-size: cover
+  // background-color: #006266
+  position: relative 
+  // height on large devices 
+  min-height: 40vw
+
+
+  .banner-content
+    // z-index: 2
+    i
+      cursor: pointer
+
+  // wrapped output of slick carousel
+  .slick-slider
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+
+  .slider-controls
+    position: absolute
+    top: 10%
+    left: 26%
+    width: 150px
+
+
+.content-banner
+  min-height: 302px
+  background-position: center center
+  margin-top: -41px
+  position: relative
+  z-index: 1
+
+.section-label h2
+  background: url('../img/image/home-label.svg') no-repeat left top 
+  width: 270px
+  text-align: center
+  margin-top: 290px
+  margin-bottom: 0
+  padding: 8.5px
+  font-weight: 500
+  color: #ffffff
+  letter-spacing: 5px
+  font-size: 1.22rem
+
+/* CONTENT PAGES HEADER */
+
+.testHeader 
+  background-color: #1a1a1a
+  color: #fff 
+
+.header-bar-icons 
+  margin-top: 13px
+  margin-right: 25px
+  z-index: 10
+
+.top-nav
+  a
+    display: block
+    i
+      color: #5D6B29
+      font-size: 1.4rem
+      margin-top: 6px
+      display: block
+    &:hover
+      text-decoration: none
+    &:focus
+      border: 1px dotted #ffffff
+      i
+        color: #ffffff
+    
+      
+  
+
+  .content 
+    background-color: #ffffff
+    color: #5D6B29
+    border: 1px solid #5D6B29
+    padding: 3px 5px
+    border-radius: 40px
+    font-weight: 600
+    
+    span.text
+      opacity: 0
+      animation: fade-animation 700ms ease-in-out forwards
+
+
+  a
+    cursor: pointer
+
+.right-link
+  font-size: 1rem
+  color: #ffffff
+  margin-top: 3px
+  right: 12px
+
+  i
+    vertical-align: middle
+    margin-top: -7px
+    position: absolute
+
+.overlay nav
+  top: 43% !important
+
+
+.dropbtn
+  color: #ffffff
+  position: relative
+  z-index: 3
+
+  &.dropbtn-mobile
+    font-size: 1.1rem
+    margin-top: -5px
+
+.dropdown
+  position: relative
+  display: inline-block
+
+.dropdown-content
+  display: none
+  position: absolute
+  background-color: rgba(255,255,255,0.8)
+  min-width: 120px
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+  z-index: 1
+  margin-left: -100px
+  border-radius: 6px
+  margin-top: 7px
+  padding-top: 2px
+  padding-bottom: 5px
+
+.dropdown-mob
+  color: #ffffff
+
+.dropdown-content a
+  color: #666
+  padding-top: 3px
+  padding-bottom: 0
+  padding-left: 20px
+  padding-right: 25px
+  text-decoration: none
+  display: block
+  text-align: right
+
+.dropdown-content a:hover 
+
+.dropdown:hover .dropdown-content 
+  display: block
+
+.dropdown:hover .dropbtn 
+  color: #CCC
+
+form.search-form
+  position: absolute
+  z-index: 5
+  right: 6%
+  top: 12px
+  width: 0
+  overflow: hidden
+
+  .input-search
+    border: none
+    border-bottom: 1px solid #ffffff
+    background: none
+    color: #ffffff
+    font-size: 0.85rem
+    border-radius: 0
+    height: 29px
+    box-shadow: none !important
+    transition: all 600ms ease-in-out
+    width: 0px
+
+
+.header-bar-main
+  display: inline-block
+  overflow: hidden
+  opacity: 0
+  transition: all 500ms ease-in-out
+
+  &.active
+    opacity: 1
+    
+    form.search-form
+      width: auto
+    
+    .input-search
+      width: 300px
+
+
+
+.icon-hide 
+  cursor: pointer
+  display: none
+  height: 20px
+  
+  &.active
+    display: inline-block
+  i
+    position: absolute
+    font-size: 0.9rem
+    margin-top: 3px
+    margin-left: -3%
+    z-index: 5
+
+.icon-search
+  display: none
+  
+  &.active
+    display: inline-block
+
+
+.font-adjustment
+  font-weight: 400
+  font-size: 0.95rem
+
+.font-dropdown
+  background-color: #878532
+  color: #ffffff
+  position: absolute
+  z-index: 11
+  right: 44px
+  border-bottom-left-radius: 8px
+  border-bottom-right-radius: 8px
+  padding: 0
+  line-height: 30px
+
+  a
+    padding: 5px 10px
+    margin-left: 0 !important
+    margin-right: 0 !important
+    margin-top: 5px
+    margin-bottom: 5px
+    font-weight: 100
+    font-size: 0.95rem
+
+    &:hover
+      background-color: #F8B72B
+      color: #1F3D1E
+      transition: 0.5s

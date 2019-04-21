@@ -1,0 +1,155 @@
+/* Forms, Input, and Select Styles */
+
+form.content-form
+  label
+    // resetting margin of label to 0 for alignment
+    margin: 0
+    color: $color-green-text
+
+textarea
+  border-radius: 4px
+  height: 25vw
+  max-height: 200px
+  
+  // thick version + green border
+  &.content-textarea
+    border: 2px solid #888754
+
+  // thin version
+  &.content-textarea-thin  
+    border: 1px solid #AAAAAA
+
+select, input
+  &.form-control.content-input
+    border-radius: 67px
+    -webkit-appearance: none
+    border: 1px solid #AAAAAA
+    font-size: 0.95rem
+    height: 33px
+    width: 100%
+
+i
+  font-size: 1.35rem
+  color: #ffffff
+  margin-top: 4px
+
+.DayPickerInput
+  input
+    border-radius: 67px
+    -webkit-appearance: none
+    border: 1px solid #AAAAAA
+    font-size: 0.95rem
+    height: 33px
+    width: 100%
+    padding-left: 15px
+    padding-right: 5px
+
+// data tables
+.table-style
+  span
+    font-size: 1rem !important
+  // for giving tables a border-radius
+
+  table
+    margin: 0
+    border: 7px solid $color-primary-faded
+    width: 100% !important
+    
+    td
+      font-size: 0.875rem
+      background-color: #fff
+      border: 2px solid $color-primary-faded
+      padding: 5px
+
+    th
+      text-align: left
+      border: 2px solid $color-primary-faded
+      color: $btn-green
+      font-family: 'Oswald', sans-serif
+      font-size: 0.875rem     
+      width: 15%
+      padding: 5px
+
+      &.date
+        background-color: #fff  
+
+    thead
+      background-color: $color-primary-faded
+      th
+        border: none
+        font-size: 0.94rem
+        color: $color-white
+  p
+    background-color: #ffffff
+
+// data tables
+.table-wrap
+  // for giving tables a border-radius
+  border-radius: 4px
+  border: 1px solid $color-primary-faded
+  background-color: $color-primary-faded
+
+.data-table-rows, .data-table-grid
+  margin: 0
+  border: 5px solid $color-primary-faded
+  min-width: 650px
+  
+  td
+    font-size: 0.875rem
+    background-color: #fff
+    border: 1px solid $color-primary-faded
+
+  th
+    text-align: left
+    border: 1px solid $color-primary-faded
+    color: $btn-green
+    font-family: 'Oswald', sans-serif
+    font-size: 0.875rem     
+    width: 15%
+
+    &.date
+      background-color: #fff  
+
+  thead
+    background-color: $color-primary-faded
+    th
+      border: none
+      font-size: 0.94rem
+      color: $color-white
+
+
+    
+// data table row version only
+.data-table-rows
+  th
+    border: none
+    border-bottom: 0.5px dashed $color-primary-faded
+
+  td
+    border: none
+    border-bottom: 0.5px dashed $color-primary-faded
+
+
+.data-table-grid
+  th
+    a
+      color: $color-primary-faded
+      text-decoration: underline
+
+
+.verification-label
+  margin: 0
+
+.form-group
+  label
+    color: $color-green-text
+    margin: 0
+    font-size: 1.125rem
+    
+.label
+  color: $color-green-text
+  font-size: 1.125rem
+  padding: 0
+  text-align: center 
+
+

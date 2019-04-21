@@ -1,0 +1,225 @@
+/* Custom Button Styles */
+
+button
+  cursor: pointer
+
+
+a.more-btn 
+  position: relative 
+  background-color: rgba(0,0,0,0)
+  border: none 
+  text-transform: lowercase 
+  color: $color-primary-dark
+
+  img
+    transition: all 400ms ease-in-out
+    transform: translateY(-1px)
+  
+  span.more-btn-txt
+    font-weight: 500
+    margin-right: 5px
+
+  span.more-btn-line
+    position: absolute
+    left: -50px
+    top: 50% 
+    display: block
+    height: 2px
+    width: 0px
+    background-color: #1a1a1a
+    transition: all 400ms ease-in-out
+    
+
+  &:hover 
+    background-color: rgba(0,0,0,0)
+    border: none 
+    color: $color-primary
+
+    span.more-btn-line
+      width: 55px
+  
+    img
+      transform: translateX(5px) translateY(-1px)
+
+
+
+// Button Download
+.btn-download 
+  border-radius: 0
+  border-bottom-left-radius: 20px
+  border-top-right-radius: 20px
+  background-color: #878532
+  color: #ffffff
+  padding: 5px 40px
+  vertical-align: middle
+  margin-top: -5px
+  
+  a
+    color: #ffffff
+    text-decoration: none
+
+
+// Button Application
+.btn-application-big
+  border-radius: 7px
+  background-image: linear-gradient(to bottom right, #739230, #4C7337)
+  padding: 23px
+  color: #ffffff
+  font-size: 1.6rem
+  letter-spacing: 1px
+  padding-top: 17px
+  padding-bottom: 15px
+  margin-bottom: 25px
+
+  .fa
+    vertical-align: middle
+    margin-top: -3px
+    margin-right: 20px
+
+.btn-application-small
+  border-radius: 7px
+  background-image: linear-gradient(to bottom right, #739230, #4C7337)
+  padding: 8px
+  color: #ffffff
+  font-size: 1rem
+  letter-spacing: 1px
+  margin-bottom: 25px
+  padding-left: 15px
+  padding-right: 15px
+  padding-bottom: 9px
+
+  .fa
+    vertical-align: middle
+    margin-top: -3px
+
+.btn-orange-gradient
+  border-radius: 30px
+  background: none
+  background-image: linear-gradient(to bottom right, #F8B822, #F29425)
+  padding: 7px
+  padding-bottom: 8px
+  color: #4A4A4A
+  letter-spacing: 1px
+  font-weight: 600
+  width: 156px
+  font-size: 1.1rem  
+
+  &.btn-search
+    font-size: 0.83rem
+    color: #ffffff
+    padding: 3px
+    padding-bottom: 4px
+    width: 80px
+    border-radius: 0
+    font-weight: 500
+
+.btn-orange-gradient-next
+  border-radius: 0
+  border-bottom-left-radius: 30px
+  border-top-right-radius: 30px
+  background-image: linear-gradient(to bottom right, #F8B822, #F29425)
+  padding: 7px
+  padding-bottom: 8px
+  color: #ffffff
+  letter-spacing: 1px
+  font-weight: 600
+  width: 156px
+  font-size: 1.1rem
+
+.btn-white
+  border-radius: 30px
+  border-color: #9B9B9B
+  background-color: #fff
+  padding: 7px
+  padding-bottom: 8px
+  color: #4A4A4A
+  letter-spacing: 1px
+  font-weight: 600
+  width: 156px
+  font-size: 1.1rem
+
+.btn-orange-small 
+  border-radius: 5px
+  background-image: linear-gradient(to bottom right, #F8B822, #F29425)
+  padding: 4px
+  padding-bottom: 5px
+  color: #ffffff
+  letter-spacing: 1px
+  width: 90px
+  font-size: 0.9rem
+  vertical-align: middle
+
+.btn-grey
+  background-color: #D8D8D8
+  border-radius: 30px
+  padding: 7px
+  padding-bottom: 8px
+  color: #4A4A4A
+  letter-spacing: 1px
+  font-weight: 600
+  width: 156px
+  font-size: 1.1rem
+  
+.green-btn, .green-btn-secondary
+  background-color: #878532
+  color: $color-white
+
+.green-btn
+  height: 36px
+  width: 136px
+  border-radius: 0 20px 0 20px
+  border: none
+
+.green-btn-secondary
+  height: 40px
+  width: 110px
+  border-radius: 10px
+  text: no-wrap
+
+.white-gray-btn
+  display: inline
+  width: 106px
+  height: 30px
+  border: 1px solid #9B9B9B
+  border-radius: 67px
+  font-size: 1.125rem
+  color: #9B9B9B
+  transition: all 200ms ease-in-out
+
+  &:hover
+    background-color: #9b9b9b
+    color: #fff
+
+.back-button 
+  font-size: 1rem
+  border: none
+  background: none
+
+
+
+.back-button-wrap 
+  position: absolute
+  right: 5%
+  cursor: pointer
+  
+  &.kids
+    bottom: 0
+
+
+// temp hover animation
+.btn
+  transition: all 300ms ease-in-out
+.btn:hover
+  background-color: #1a1a1a
+  color: $color-white
+
+div.site-search-btn, button.site-search-btn
+  background-color: $color-primary-faded
+  border-radius: 10px
+  color: #ffffff
+  padding: 4px 24px
+  border: none
+  cursor: pointer
+
+  i
+    font-size: 1rem

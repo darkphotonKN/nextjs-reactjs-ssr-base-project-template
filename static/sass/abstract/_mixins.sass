@@ -1,0 +1,12 @@
+/* MIXINS */
+
+@mixin clearfix 
+    &:after 
+        content: ""
+        display: table
+        clear: both
+
+
+@mixin border-green
+    border: $home-pane-bdr-width solid $color-primary
+    padding: 20px 20px

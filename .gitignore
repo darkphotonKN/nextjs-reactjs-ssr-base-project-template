@@ -1,0 +1,10 @@
+config.codekit3
+.DS_Store
+node_modules
+.next 
+static/sass/_bourbon.scss
+static/sass/bourbon
+static/img/banner/_DS_Store
+.DS_Store
+**/.DS_Store
+shoushan-dev

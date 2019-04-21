@@ -1,0 +1,146 @@
+/* FOOTER  */
+$footer-bar-bg: #422D14
+$footer-bar-white: #FCF9F1
+$footer-end-bg: #7E5F15
+$num-color: #F39601
+
+footer#footer 
+  bottom: 0
+  height: auto
+  background-color: $color-primary-faded
+  color: $color-white
+  width: 100%
+  font-size: 1rem
+  position: relative
+  z-index: 5
+
+  &.english
+    font-size: 0.8em
+
+// big footer 
+.big-footer
+  &.container 
+    // padding: 0 10%
+    padding-top: 15px
+
+  .big-footer-bar 
+    display: flex
+    flex-direction: row 
+    justify-content: space-around
+    text-align: left
+
+    ul.footer-links-list 
+      //line-height: 35px
+      
+      li 
+        list-style: none
+        margin-top: 15px
+        margin-bottom: 15px
+
+        &:nth-child(1) a.footer-link
+          // spacing between list head and links
+          margin-bottom: 5px
+          color: #422D14
+          font-weight: 700          
+          
+        a.footer-link
+          text-decoration: none 
+          color: $color-white
+          font-weight: 300
+          transition: all 100ms ease-in-out
+          letter-spacing: 1.5px
+
+          &:hover, &:focus
+            color: $color-yellow
+          &:focus
+            border: 1px dotted #007bff
+
+        a.footer-head 
+          text-decoration: none 
+          color: #422D14 
+          padding-bottom: 3px
+          font-weight: 700
+
+          &:hover 
+            border-bottom: 0.7px solid #422D14 
+
+
+// footer bar 
+.footer-bar-wrap
+  background-color: $footer-bar-bg
+  text-align: center
+  min-height: 29px
+
+.footer-bar 
+  &.container 
+    // padding: 0 10%
+
+  ul.footer-bar-list 
+    display: flex 
+    flex-direction: row 
+    justify-content: space-around
+    align-items: center 
+    margin: 0 0
+
+    li 
+      list-style: none 
+      display: inline
+      padding: 0.5rem 0
+      a 
+        color: $footer-bar-white
+        text-decoration: none
+        font-weight: 300
+        letter-spacing: 1.5px
+        &:focus
+          border: 1px dotted #007bff
+
+
+// footer end 
+.footer-end-wrap
+  padding: 1rem 0
+  background-color: $footer-end-bg
+  color: $color-white
+  
+  h3 
+    font-size: 1.33rem
+    font-weight: 400
+    color: #ffffff
+
+
+  p
+    font-size: 1rem
+    line-height: 20px
+    color: $color-white
+    font-weight: 100
+    
+    &.english
+      font-size: 0.875rem
+
+  img 
+    width: 100px
+
+  .container.footer-end
+    // padding: 0 10%
+
+    .right-content
+      font-size: 0.875rem
+      color: #E7E3C9
+
+      p
+        font-size: 0.83rem
+        line-height: 20px
+        color: #E7E3C9
+        font-weight: 300
+
+      span 
+        color: #F39601
+
+
+.en-footer .big-footer-bar ul li a
+  letter-spacing: 0 !important
+
+.en-footer .big-footer-bar li:nth-child(1) a.footer-link
+  font-size: 0.9rem
+
+.en-footer-wrap .footer-bar ul li a
+  letter-spacing: 0 !important

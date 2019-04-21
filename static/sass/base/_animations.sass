@@ -1,0 +1,394 @@
+
+/* ANIMATIONS */
+
+
+@keyframes load-modal
+    0% 
+        opacity: 0.1
+        background-color: #1a1a1a
+    100%
+        opacity: 1
+        background-color: rgba(#1a1a1a, 0.4)
+
+@keyframes inner-modal
+    0%
+        opacity: 0.1
+        transform: scaleX(0) translate(-50%, -50%)
+    100%
+        opacity: 1
+        transform: scaleX(1) translate(-50%, -50%)
+
+// posting message
+@keyframes posting-message
+    0%
+        opacity: 0.1
+        transform: translateX(-10px)
+    100%
+        opacity: 1
+        transform: translateX(0px)
+
+
+// dropdown menu
+
+@keyframes dropdown-main
+    0%
+        opacity: 0
+        transform: rotateY(-120deg) translateY(-100px)
+
+    100%
+        opacity: 1
+        transform: rotateX(0deg) rotateY(0deg) translateY(0)
+
+
+@keyframes build-in-spin
+    0%
+        opacity: 0
+        transform: rotateY(-70deg) scaleX(0.1) translateY(20px)
+        transform-origin: left center
+
+    50%
+        opacity: 0.2 
+
+    90%
+        transform: rotateY(10deg)
+
+    100%
+        opacity: 1
+        transform: translateY(0) scaleX(1) rotateY(0deg)
+        transform-origin: left center
+
+
+@keyframes dropdown-primary
+    0%
+        opacity: 0
+        transform: translateY(-5px)
+
+    40%
+        opacity: 0.3
+
+    100%
+        opacity: 1
+        transform: translateY(0)
+
+
+// navs
+
+@keyframes expandNav
+    0%
+        opacity: 0
+        background-color: #fff
+        // transform: translateY(-15px)
+    90%
+        // background-color: #fff
+    100%
+        opacity: 1
+        background-color: #F1F1F1
+        // transform: translateY(0)
+
+
+
+// content
+@keyframes expandContent
+    0%
+        transform: translateY(-20px)
+        opacity: 0.2
+    100% 
+        transform: translateY(0)
+        opacity: 1
+        
+
+@keyframes moveInLeft 
+    0% 
+        opacity: 0
+        transform: translateX(-100px)
+
+    80% 
+        transform: translateX(10px)
+    
+    100% 
+        transform: translateX(0)
+        opacity: 1
+    
+
+
+@keyframes moveInRight 
+    0% 
+        opacity: 0
+        transform: translateX(100px)
+
+    80% 
+        transform: translateX(-10px)
+    
+    100% 
+        transform: translateX(0)
+        opacity: 1
+    
+
+
+@keyframes moveInBottom 
+    0% 
+        opacity: 0
+        transform: translateY(50px)
+
+    100% 
+        transform: translateY(0)
+        opacity: 1
+
+
+
+@keyframes up-and-down 
+    0%
+        transform: translate(-50%, -50%)
+    50% 
+        transform: translate(-50%, -55%)
+    100%
+        transform: translate(-50%, -50%)
+
+
+@keyframes shrink-and-grow
+    0%
+        transform: scale(0.32)
+
+    50% 
+        transform: scale(0.24)
+    100%
+        transform: scale(0.32)
+
+@keyframes unveil 
+    0% 
+        color: black 
+    100% 
+        color: red
+
+
+.menu-box
+    animation: fade-animation 500ms ease-in-out forwards
+    transition: 0.5s
+    z-index: 5
+    position: relative
+
+
+.fade-animate
+    animation: fade-animation 500ms ease-in-out forwards
+    transition: 0.5s
+
+@keyframes fade-animation 
+    0%
+        opacity: 0
+    
+    100%
+        opacity: 1
+
+
+
+/* KIDS */
+.kids-title
+    animation: MoveUpDown 2.2s linear infinite
+
+.kids-stars
+    animation: OpacityHideShow 2s linear infinite
+    
+.kids-submenu, .kids-submenu-content
+    animation: MoveUpDown 1.8s linear infinite
+    cursor: pointer
+
+    &:hover
+        opacity: 0.9
+        transition: 0.5s
+
+
+.monkey-right 
+    animation: CircularRight 2s ease-in-out infinite
+    transform-origin: top right
+
+.monkey-left 
+    animation: CircularLeft 1.5s ease-in-out infinite
+    transform-origin: top left
+
+.leaf-right, .leaf-right-content
+    animation: CircularDownRight 2s ease-in-out infinite
+    transform-origin: bottom center
+
+.leaf-left, .leaf-left-content
+    animation: CircularDownLeft 3s ease-in-out infinite
+    transform-origin: bottom center
+
+.kids-logo
+    animation: MoveLeftRight 2s linear infinite
+    /* cursor: pointer */
+
+    &:hover
+        opacity: 0.9
+        transition: 0.5s
+
+
+@keyframes OpacityHideShow 
+    0%, 100%
+        opacity: 1
+    
+    50% 
+        opacity: 0.3
+
+@keyframes MoveUpDown 
+    0%, 100%
+        transform: translateY(-6px)
+    
+    50% 
+        transform: translateY(0px)
+
+@keyframes MoveLeftRight
+    0%, 100%
+        transform: translateX(-4px)
+    
+    50% 
+        transform: translateX(0px)
+
+@keyframes CircularRight
+    0%, 100%
+        transform: rotate(-5deg)
+    
+    50% 
+        transform: rotate(5deg)
+
+@keyframes CircularLeft
+    0%, 100%
+        transform: rotate(-6deg)
+    
+    50% 
+        transform: rotate(0deg)
+
+@keyframes CircularDownLeft
+    0%, 100%
+        transform: rotate(-6deg)
+    
+    50% 
+        transform: rotate(0deg)
+
+
+@keyframes fadeInRight
+    0%
+        transform: translateX(500px)
+        opacity: 0.2
+    100%
+        transform: translateX(0)
+        opacity: 1
+        
+
+@keyframes CircularDownRight
+    0%, 100%
+        transform: rotate(0deg)
+    
+    50% 
+        transform: rotate(-6deg)
+
+
+.kids-submenu-type-1
+    animation: CircularType1 2.5s ease-in-out infinite
+    transform-origin: bottom right
+
+@keyframes CircularType1
+    0%, 100%
+        transform: rotate(-20deg)
+    
+    50% 
+        transform: rotate(20deg)
+
+
+.kids-submenu-type-2
+    animation: CircularType2 3s ease-in-out infinite
+    transform-origin: center center
+
+@keyframes CircularType2
+    0%, 100%
+        transform: rotate(0deg) translateY(-15px) translateX(35px)
+    
+    50% 
+        transform: rotate(20deg) translateY(-25px) translateX(-25px)
+
+
+.kids-submenu-type-3
+    animation: CircularType3 3s ease-in-out infinite
+    transform-origin: center center
+
+@keyframes CircularType3
+    0%, 100%
+        transform: rotate(60deg)
+    
+    50% 
+        transform: rotate(-10deg)
+
+
+.kids-submenu-type-4
+    animation: CircularType4 2.5s ease-in-out infinite
+    transform-origin: left bottom
+
+@keyframes CircularType4
+    0%, 100%
+        transform: rotate(20deg)
+    
+    50% 
+        transform: rotate(10deg)
+
+
+.kids-submenu-type-5
+    animation: CircularType5 5s ease-in-out infinite
+    transform-origin: center center
+
+@keyframes CircularType5
+    00%, 100%
+        transform: rotate(5deg) translateY(-25px) translateX(35px) 
+    
+    50% 
+        transform: rotate(360deg) translateY(0) translateX(-25px)
+
+
+@keyframes shadowsdancing 
+    0% 
+        box-shadow: inset 30px 0 0 rgba($color-primary, 0.4), inset 0 30px 0 rgba($color-yellow, 0.4), inset -30px 0 0 rgba($color-white, 0.4), inset 0 -30px 0 rgba($color-yellow, 0.4)
+    
+    25% 
+        box-shadow: inset 30px 0 0 rgba($color-brown, 0.4), inset 0 30px 0 rgba($color-primary-faded, 0.4), inset -30px 0 0 rgba($color-primary, 0.4), inset 0 -30px 0 rgba($color-brown, 0.4)
+    
+    50% 
+        box-shadow: inset 30px 0 0 rgba($color-yellow, 0.4), inset 0 30px 0 rgba($color-brown, 0.4), inset -30px 0 0 rgba($color-yellow, 0.4), inset 0 -30px 0 rgba($color-primary-faded, 0.4)
+    
+    75% 
+    box-shadow: inset 30px 0 0 rgba($color-primary-light, 0.4), inset 0 30px 0 rgba($color-yellow, 0.4), inset -30px 0 0 rgba($color-brown, 0.4), inset 0 -30px 0 rgba($color-primary, 0.4)
+    
+    100% 
+        box-shadow: inset 30px 0 0 rgba($color-primary-faded, 0.4) inset 0 30px 0 rgba($color-primary, 0.4), inset -30px 0 0 rgba(255, 196, 140, 0.4), inset 0 -30px 0 rgba($color-yellow, 0.4)
+    
+
+@keyframes colordancing 
+    0% 
+        color: $color-primary
+    
+    25% 
+        color: $color-brown
+    
+    50% 
+        color: $color-yellow
+    
+    75% 
+        color: #EFFAB4
+    
+    100% 
+        color: $color-primary-light
+  
+
+@keyframes colordancing2 
+    0% 
+        color: $color-yellow
+    
+    25% 
+        color: $color-primary-light
+    
+    50% 
+        color: $color-primary
+    
+    75% 
+        color: $color-brown
+    
+    100% 
+        color: $color-yellow
+  

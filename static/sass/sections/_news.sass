@@ -1,0 +1,264 @@
+/* NEWS STYLES */ 
+.day-picker
+  z-index: 3
+  position: relative
+
+/* Latest News */ 
+.latest-news
+    margin-top: -20px
+
+    .date
+        background-color: #688A32
+        border-bottom-left-radius: 40px
+        border-top-right-radius: 40px
+        padding: 10px 20px
+        color: #FFF
+        margin-left: -55px
+        position: relative
+        width: 115px
+
+        .year
+            font-size: 1.3rem
+            font-weight: 600
+            margin-top: -3px
+        
+        .month
+            font-size: 1rem
+            font-weight: 500
+
+    .title
+        color: #878532
+        font-size: 0.9rem
+        letter-spacing: 1px
+        font-weight: 600
+        margin-top: 7px
+
+    .content
+        color: #9B9B9B
+        margin-top: 5px
+        font-size: 1.05rem
+        line-height: 30px
+
+    .news-icon
+        width: 40px
+        margin-bottom: 8px
+    
+    .news-section 
+        border-bottom: 1px solid #AEAEAE
+        padding-top: 20px
+        padding-bottom: 20px 
+        a
+            display: block
+            &:focus
+                border: 1px dotted #007bff
+
+.filename a
+    color: #F8B72B
+    margin-left: 5px
+
+
+.back-to-news 
+    a
+        color: #878532
+        letter-spacing: 2px
+
+    img
+        width: 20px
+        margin-top: -3px
+        margin-left: 1px
+
+    
+
+/* Event */ 
+.event
+    margin-top: -10px
+
+    .event-data-block:nth-child(1)
+        margin-top: 0px !important
+
+    .event-data-block
+        margin-top: 70px
+        margin-bottom: 70px !important
+
+        z-index: 0
+        position: relative
+
+.event-background
+    height: 155px
+    width: 200px
+    border-top-right-radius: 70%
+    margin-left: -40px
+    position: relative
+    z-index: 2
+
+.event-date
+    background-color: #688A32
+    border-bottom-right-radius: 40px
+    padding: 5px 35px
+    color: #FFF
+    margin-left: 85px
+    position: relative
+    width: 280px
+    z-index: 1
+    text-align: right
+    font-size: 0.7rem
+    margin-top: -137px
+
+.event-date-detail 
+    color: #9B9B9B
+    font-size: 0.8rem
+    
+.event-title
+    color: #5D6B29
+    font-size: 1.25rem
+    font-weight: 600
+    line-height: 33px
+    margin-bottom: 15px
+    margin-top: 5px
+
+.event-front
+    height: 75px
+    
+.event-content
+
+    a
+        text-decoration: none
+        display: block
+        
+        &:hover
+            opacity: 0.8
+            transition: 0.5s
+        &:focus
+            outline: 1px dotted #007bff
+            
+    h3
+        font-size: 1.1rem
+        color: #4A4A4A
+        padding-top: 17px
+        margin-bottom: 5px
+    
+    p 
+        //font-size: 0.75rem
+        //color: #9B9B9B
+        //line-height: 20px
+        text-align: justify
+
+.event-dates
+    border-radius: 10px
+    background-color: #5D6B29
+    padding: 5px 10px
+    color: #ffffff
+    margin-bottom: 10px
+    font-weight: 400
+    margin-left: 5px
+    text-align: center
+
+/* FAQ */ 
+.faq
+    margin-top: -20px 
+
+    .faq-date
+        padding: 7px
+        border: 1px solid #979797
+        color: #979797
+        font-size: 0.8rem
+        border-radius: 8px
+        width: 55px
+
+        .year
+
+        .month
+    
+    .faq-section 
+        border-bottom: 1px solid #AEAEAE
+        padding-top: 10px
+        padding-bottom: 0 
+
+    .question-title h2
+        font-size: 3.5rem
+        color: #878532
+        margin-top: -15px
+        font-weight: 400
+    
+    .question-content p 
+        font-size: 0.9rem
+        color: #9B9B9B
+        margin-top: 5px
+        line-height: 20px
+    
+    .answer-title h2
+        font-size: 3.5rem
+        color: #F8B72B
+        margin-top: -15px
+        letter-spacing: 5px
+        margin-left: 2px
+        font-weight: 400
+    
+    .answer-content p 
+        font-size: 0.9rem
+        color: #9B9B9B
+        margin-top: -5px
+        line-height: 20px
+        
+
+/* FAQ Detail */
+.faq-detail
+
+    .answer
+        font-size: 1.8rem
+        color: #F8B72B
+        letter-spacing: 5px
+    
+    .prev-faq
+        margin-right: 35px
+        color: #878532
+
+        img
+            width: 20px
+            margin-right: 8px
+            vertical-align: middle
+            margin-top: -3px
+
+    .next-faq
+        color: #878532
+
+        img
+            width: 20px
+            margin-left: 8px
+            vertical-align: middle
+            margin-top: -3px
+
+
+@media only screen and (max-width: $xs-custom-bp)
+
+    /* News Mobile */
+    .latest-news
+        margin-top: -20px
+
+        .date
+            margin-left: 0px
+    /* Event Mobile */
+    .event-background
+        height: 135px
+        width: 150px
+        margin-left: -15px
+        
+    .event-date
+        margin-left: -5px
+        padding: 5px 25px
+        margin-top: -120px
+
+    .event-content
+
+        h3
+            padding-top: 65px
+        
+        p 
+            margin-top: 10px
+
+    .faq-date
+        width: 100% !important
+
+
+
+    

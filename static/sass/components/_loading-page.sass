@@ -1,0 +1,94 @@
+
+/* LOADING PAGE */ 
+
+.loading-page 
+    z-index: 9999
+    height: 100vh 
+    width: 100vw 
+    background-color: $loading-bg
+    position: relative
+    overflow: hidden
+
+    &.hide 
+        display: none
+
+    .loading-content 
+        height: 50%
+        width: 50%
+        color: #000
+        position: absolute 
+        top: 50% 
+        left: 50%
+        transform: translate(-50%, -50%) 
+    
+        .content-wrap
+            position: relative
+            height: 100%
+            width: 100%
+            left: 50%
+            top: 70%
+            animation: up-and-down 2800ms ease-in-out infinite
+            // .animate-wrap
+            //     position: relative
+            //     animation: up-and-down 2800ms ease-in-out infinite
+
+            .logo, .loading-title, .monkeyA, .monkeyB, .platform, .shadow
+                position: absolute  
+            
+            .logo 
+                top: -20% 
+                left: 50%
+                font-weight: bold
+                color: #fff 
+
+            .loading-title 
+                color: #fff
+                bottom: 47%
+                left: 2% 
+                font-weight: bold 
+                font-size: 9rem 
+                z-index: 9996
+                
+
+            .monkeyA  
+                top: 24%
+                left: 9%
+                // height: 58%
+                width: 33%
+                z-index: 9997
+                transform-origin: 50% 80%
+
+            .monkeyB
+                // height: 46%
+                width: 32%
+                top: 28%
+                right: 0%
+                z-index: 9997
+
+            .platform  
+                bottom: -10%
+                left: 0 
+                height: 80%
+                width: 100%
+                z-index: 9995
+
+            .shadow 
+                // bottom: -105%
+                // left: -36%
+                bottom: -45%
+                left: -77%
+                width: 250%
+                animation: shrink-and-grow 2800ms ease-in-out infinite
+                box-shadow: 0 0 0 0 !important
+
+
+.circle-area 
+    position: absolute
+    top: 50% 
+    left: 50% 
+    transform: translate(-50%, -50%) 
+    width: 12vw
+    height: 12vw
+    border-radius: 50%
+    background-color: $loading-main
+
